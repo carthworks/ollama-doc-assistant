@@ -2,7 +2,7 @@
 import { NextResponse } from 'next/server';
 
 const OLLAMA_URL = process.env.OLLAMA_URL || 'http://localhost:11434';
-const FETCH_TIMEOUT_MS = Number(process.env.OLLAMA_FETCH_TIMEOUT_MS || 30000);
+const FETCH_TIMEOUT_MS = Number(process.env.OLLAMA_FETCH_TIMEOUT_MS || 50000);
 const start = Date.now();
 
 export async function POST(req) {

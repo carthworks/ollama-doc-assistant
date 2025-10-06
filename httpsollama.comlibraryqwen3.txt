@@ -1,0 +1,19 @@
+https://ollama.com/library/qwen3
+ollama --version
+ollama run qwen3:4b
+
+http://localhost:11434
+
+
+======================
+
+curl -v http://localhost:11434/api/chat -H "Content-Type: application/json" -d '{"model":"qwen3:4b","messages":[{"role":"system","content":"hi"},{"role":"user","content":"hello"}],"stream":false}'
+
+
+please fix 
+
+{
+    "question": "Write a 3-line product tagline for an AI security SaaS"
+}
+
+gets rersponse as {"error":"TypeError: fetch failed"}

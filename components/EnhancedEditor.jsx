@@ -22,7 +22,7 @@ export default function EnhancedEditor({ initialText = '', onAsk = null }) {
   const [text, setText] = useState(initialText);
   const [language, setLanguage] = useState('markdown'); // markdown, javascript, python, bash, text
   const [showPreview, setShowPreview] = useState(true);
-  const [themeDark, setThemeDark] = useState(true);
+  const [themeDark, setThemeDark] = useState(false);
   const [errors, setErrors] = useState([]);
   const [busy, setBusy] = useState(false);
   const editorRef = useRef(null);
