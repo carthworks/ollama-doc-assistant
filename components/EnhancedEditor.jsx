@@ -280,31 +280,31 @@ export default function EnhancedEditor({ initialText = '', onAsk = null }) {
               type="button"
               title="Toggle preview"
               onClick={() => setShowPreview(p => !p)}
-              className="px-3 py-1 rounded-md border border-slate-700/40 text-sm hover:bg-slate-700/10"
+              className="px-3 py-1 rounded-md border border-slate-700/40 text-sm hover:bg-slate-700/10 hidden"
             >
               {showPreview ? 'Hide Preview' : 'Show Preview'}
             </button>
 
-            <button title="Copy" onClick={handleCopy} className="flex items-center gap-2 px-3 py-1 rounded-md border border-slate-700/40 hover:bg-slate-700/10 text-sm">
+            <button title="Copy" onClick={handleCopy} className=" hidden flex items-center gap-2 px-3 py-1 rounded-md border border-slate-700/40 hover:bg-slate-700/10 text-sm">
               <FiCopy /> Copy
             </button>
 
-            <div className="relative">
+            <div className="relative hidden">
               <button title="Export" className="flex items-center gap-2 px-3 py-1 rounded-md border border-slate-700/40 hover:bg-slate-700/10 text-sm">
                 <FiDownload /> Export
               </button>
-              <div className="absolute right-0 mt-2 w-44 bg-white/5 backdrop-blur-sm border border-slate-700/20 rounded-md p-2 shadow-md hidden group-hover:block">
+              <div className="hidden absolute right-0 mt-2 w-44 bg-white/5 backdrop-blur-sm border border-slate-700/20 rounded-md p-2 shadow-md hidden group-hover:block">
                 {/* a11y: below we'll display direct buttons (we also provide onClick on outside buttons) */}
               </div>
             </div>
 
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 hidden" >
               <button title="Export as .txt" onClick={exportText} className="px-3 py-1 rounded-md border border-slate-700/40 text-sm hover:bg-slate-700/10">TXT</button>
               <button title="Export as Markdown" onClick={exportMarkdown} className="px-3 py-1 rounded-md border border-slate-700/40 text-sm hover:bg-slate-700/10">MD</button>
               <button title="Export as PDF" onClick={exportPDF} className="px-3 py-1 rounded-md border border-slate-700/40 text-sm hover:bg-slate-700/10">PDF</button>
             </div>
 
-            <button title="Share" onClick={handleShare} className="px-3 py-1 rounded-md border border-slate-700/40 text-sm hover:bg-slate-700/10">
+            <button title="Share" onClick={handleShare} className=" hidden px-3 py-1 rounded-md border border-slate-700/40 text-sm hover:bg-slate-700/10">
               <FiShare2 /> Share
             </button>
 

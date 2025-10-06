@@ -139,7 +139,7 @@ Karthikeyan T
 
 💼 LinkedIn
 
-📧 kovaisan@gmail.com
+📧 tkarthikeyan@gmail.com
 
 🪪 License
 
