@@ -1,0 +1,29 @@
+{
+  "name": "nextjs-qna-ollama-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "ingest": "node scripts/ingest.js"
+  },
+  "dependencies": {
+    "axios": "1.4.0",
+    "dompurify": "^3.2.7",
+    "fs-extra": "11.1.1",
+    "marked": "^16.3.0",
+    "next": "13.4.10",
+    "prismjs": "^1.30.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^5.5.0",
+    "wink-bm25-text-search": "2.0.0",
+    "wink-tokenizer": "4.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
+    "tailwindcss": "3"
+  }
+}
