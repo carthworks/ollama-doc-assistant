@@ -252,13 +252,14 @@ export default function EnhancedEditor({ initialText = '', onAsk = null }) {
 
   // small responsive layout
   return (
-    <div className={themeDark ? 'min-h-screen py-8 bg-slate-900 text-slate-100' : 'min-h-screen py-8 bg-slate-50 text-slate-900'}>
+    <div className={themeDark ? 'min-h-screen py-8 bg-slate-900 text-slate-100' : 'min-h-screen0 py-8 bg-slate-50 text-slate-900'}>
       <div className="max-w-6xl mx-auto px-4">
         {/* Header */}
         <header className="flex items-start gap-4 md:items-center flex-col md:flex-row justify-between">
           <div>
-            <h1 className="text-2xl md:text-3xl font-semibold leading-tight">Smart Snippet Studio</h1>
+            <h1 className="text-2xl md:text-3xl font-semibold leading-tight"> Ollama Doc Assistant</h1>
             <p className="mt-1 text-sm opacity-80 max-w-xl">
+              A local, privacy-first AI Q&A app powered by Next.js, Qwen3:4b, and BM25 retrieval.*
               A fast, accessible editor for code & docs — real-time preview, syntax highlighting, export, share, and smart suggestions.
             </p>
           </div>
