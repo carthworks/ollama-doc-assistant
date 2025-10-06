@@ -1,4 +1,3 @@
-t’s concise yet detailed, professional, and includes everything from overview to setup, usage, and roadmap.
 
 # 🧠 Ollama Doc Assistant  
 *A local, privacy-first AI Q&A app built with Next.js, Ollama (Qwen3:4b), and BM25 document retrieval.*
@@ -12,6 +11,8 @@ t’s concise yet detailed, professional, and includes everything from overview 
 It combines a **Next.js frontend**, a **Node.js backend**, **BM25 search** for context retrieval, and **Ollama’s Qwen3:4b** model for intelligent, local answers.
 
 ---
+<img width="1920" height="1279" alt="screenshot01" src="https://github.com/user-attachments/assets/aeb5af79-63c3-4eb5-a33b-af7a86a788a4" />
+
 
 ## ✨ Features  
 - 🤖 **Local AI Assistant** — powered by Ollama + Qwen3:4b  
