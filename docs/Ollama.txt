@@ -1,3 +1,16 @@
+https://ollama.com/library/qwen3
+ollama --version
+ollama run qwen3:4b
+
+http://localhost:11434
+
+
+======================
+
+curl -v http://localhost:11434/api/chat -H "Content-Type: application/json" -d '{"model":"qwen3:4b","messages":[{"role":"system","content":"hi"},{"role":"user","content":"hello"}],"stream":false}'
+
+
+
 Nice — I’ll explain **what Ollama is**, **what RAG (Retrieval-Augmented Generation)** is, and then give a **detailed, production-ready AI product flow** that combines Ollama + RAG to build a private, reliable assistant (with architecture, data pipeline, prompts, deployment, monitoring, and security). I’ll include practical design choices and implementation notes you can use immediately.
 
 # What is **Ollama** (short)
